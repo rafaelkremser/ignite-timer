@@ -29,7 +29,7 @@ export function History() {
                   <td>{cycle.minutesAmount} minutos</td>
                   <td>
                     Há{' '}
-                    {formatDistanceToNow(cycle.startDate, {
+                    {formatDistanceToNow(new Date(cycle.startDate), {
                       locale: ptBR,
                     })}
                   </td>
